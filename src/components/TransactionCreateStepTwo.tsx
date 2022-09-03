@@ -139,13 +139,14 @@ const TransactionCreateStepTwo: React.FC<TransactionCreateStepTwoProps> = ({
                     autoFocus
                     id={"transaction-create-amount-input"}
                     type="text"
-                    placeholder="Amount"
-                    data-test={"transaction-create-amount-input"}
+                    // placeholder="Amount"
+                    label="Amount"
+                    // data-test={"transaction-create-amount-input"}
                     error={(touched || value !== initialValue) && Boolean(error)}
                     helperText={touched || value !== initialValue ? error : ""}
                     InputProps={{
                       inputComponent: NumberFormatCustom as any,
-                      inputProps: { id: "amount" },
+                      // inputProps: { id: "amount" },
                     }}
                     {...field}
                   />
@@ -160,8 +161,9 @@ const TransactionCreateStepTwo: React.FC<TransactionCreateStepTwoProps> = ({
                     required
                     id={"transaction-create-description-input"}
                     type="text"
-                    placeholder="Add a note"
-                    data-test={"transaction-create-description-input"}
+                    // placeholder="Add a note"
+                    label="Add a note"
+                    // data-test={"transaction-create-description-input"}
                     error={(touched || value !== initialValue) && Boolean(error)}
                     helperText={touched || value !== initialValue ? error : ""}
                     {...field}
