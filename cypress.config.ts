@@ -11,17 +11,18 @@ export default defineConfig({
   },
 
   env: {
-    apiUrl: "http://localhost:3001",
+    apiUrl: "http://localhost:3000",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,
     codeCoverage: {
-      url: "http://localhost:3001/__coverage__",
+      url: "http://localhost:3000/__coverage__",
     },
   },
 
   experimentalStudio: true,
 
   e2e: {
+    baseUrl: "http://localhost:3000",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

@@ -244,7 +244,7 @@ const NavDrawer: React.FC<Props> = ({
                 variant="h6"
                 color="textPrimary"
                 className={classes.amount}
-                data-test="sidenav-user-balance"
+                data-testid="sidenav-user-balance"
               >
                 {currentUser.balance ? formatAmount(currentUser.balance) : formatAmount(0)}
               </Typography>
