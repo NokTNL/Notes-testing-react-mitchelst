@@ -16,7 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
-    "types": ["cypress", "@testing-library/cypress"]
   },
   "include": ["src", "scripts", "backend", "src/__tests__"]
 }

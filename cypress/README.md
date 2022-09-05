@@ -10,6 +10,22 @@
 
 - Cypress testing library extends the `cy` object and provides it withg extra methods provided by DOM testing library. Types can also be added to TS compiler to prevent throwing errors. Instruction on how to do it: https://testing-library.com/docs/cypress-testing-library/intro#usage
 
+  - To let TS recognises that the types of cypress and @testing-library/cypress :
+
+    1. You can make a `tsconfig.json` under the `cypress` folder:
+
+    ```
+    {
+      "compilerOptions": {
+        "types": ["cypress", "@testing-library/cypress"]
+      }
+    }
+    ```
+
+    2. You can include these lines in each spec files:
+       /// <reference types="cypress" />
+       /// <reference types="@testing-library/cypress" />
+
 ## Usage
 
 - tests are called "specs" in cypress. They are stored under `cypress/e2e`
