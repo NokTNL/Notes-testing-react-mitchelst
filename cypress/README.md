@@ -1,8 +1,8 @@
 ## Installation
 
 - `yarn add cypress @testing-library/cypress`
-  - no need the `-D` flag for devDependncies because of how create-react-app works
-- To add autocompletion: `yarn add -D @types/testing-library__cypress`
+
+  - Cypress now comes with official TS support
 
 - To open cypress, run `npx cypress open` or `yarn run cypress open`. Alternative, add `"scripts"` to `package.json`: https://docs.cypress.io/guides/getting-started/opening-the-app#Adding-npm-Scripts
 
